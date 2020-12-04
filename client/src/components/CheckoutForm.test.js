@@ -1,12 +1,13 @@
 import React from "react";
+import App from '../App'
 import { render, screen, fireEvent } from "@testing-library/react";
 import CheckoutForm from "./CheckoutForm";
 
 // Write up the two tests here and make sure they are testing what the title shows
 
-test("form header renders", () => {
-    return(<App />)
-    const header = screen.getByText('React Plants')
+test("form header renders", async () => {
+    render(<App />)
+    const header = await screen.getByText('React Plants')
     expect(header).toBeInTheDocument()
 });
 
@@ -19,9 +20,10 @@ test("form shows success message on submit with form details", async () => {
     const cityInput = screen.getByText(/City:/i)
     const stateInput = screen.getByText(/State:/i)
     const zipInput = screen.getByText(/Zip:/i)
+    const button = screen.getByTestId('button')
 
     fireEvent.click(button)
 
-    const newCheckout = screen.getByText(checkout)
+    const newCheckout = await screen.getByTestId('successMessage')
     expect(newCheckout).toBeInTheDocument()
 });
