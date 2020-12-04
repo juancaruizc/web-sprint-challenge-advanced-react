@@ -30,13 +30,25 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+- One can build a stateful class component by building logic and state to a component that is class based
+
 2. Describe the different phases of the component lifecycle.
+
+- Mounting - This is where the components is being built from the ground up it is the 'birth'
+- Updating - This is where the component usually renders new data it is updating the data in the component
+- Un mounting - This removes the component from the screen, it is where the component 'dies'
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+- The mounting phase one can build a component and render it on the screen, in the updating phase, one can send data through different mediums usually though an API or backend to update the data that is rendered the the component, the un-mounting phase is where the component is no longer rendering on the screen
+
 4. Define stateful logic.
 
+- Stateful logic is any piece of code that contains state
+
 5. Describe how to test a React component with React Testing Library.
+
+- Create a .test.js file for the component that you one to test, RTL is already installed with react so one can start testing inputs, placeholders, or any interaction the user can have with the app
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -44,7 +56,7 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-_This project uses a local server for the data fetching. You will need three seperate terminal windows open:_
+_This project uses a local server for the data fetching. You will need three separate terminal windows open:_
 
 1. _one for your server_
 2. _one for your React app (in the /client folder)_
