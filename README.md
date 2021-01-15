@@ -29,14 +29,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+   you use a class synytax when building the component function, create state at the top of the function and use the 'this.state' keyword to refer to state.
 
 2. Describe the different phases of the component lifecycle.
+   Mounting, updating, unmounting
 
 3. Demonstrate an understanding of class component lifecycle methods.
+   When you mount a component it is first rendered, when you update a component that same component is simply updated and does not have to re render the whole page, the unmounting phase is when the component dies and is removed from the screen
 
 4. Define stateful logic.
+   Stateful logic is any logic that deals with state and behavior that can't be seen by the user
 
 5. Describe how to test a React component with React Testing Library.
+   You can create different tests according to specific functions or renders that are being used in the website as a user would use it.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
